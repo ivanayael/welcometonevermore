@@ -1,214 +1,83 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Encabezado */
-header {
-    background: #004d40;
-    color: #fff;
-    padding: 1rem 0;
-    position: fixed;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.auth-buttons a {
-    margin-left: 1rem;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background: #00796b;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.auth-buttons a:hover {
-    background: #004d40;
-}
-
-/* Sección de Hero */
-.hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 6rem 1rem 4rem;
-    margin-top: 70px; /* Ajustar según el tamaño del header */
-}
-
-.hero-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.btn-primary {
-    padding: 0.75rem 1.5rem;
-    background: #00796b;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn-primary:hover {
-    background: #004d40;
-}
-
-/* Sección de Cursos */
-.courses {
-    padding: 4rem 1rem;
-}
-
-.courses h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.course-card {
-    display: flex;
-    background: #f9f9f9;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    overflow: hidden;
-}
-
-.course-card img {
-    width: 40%;
-}
-
-.course-info {
-    padding: 1rem;
-    width: 60%;
-}
-
-.course-info h3 {
-    margin: 0;
-}
-
-.course-info p {
-    margin: 0.5rem 0;
-}
-
-.btn-secondary {
-    padding: 0.5rem 1rem;
-    background: #00796b;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn-secondary:hover {
-    background: #004d40;
-}
-
-/* Sección de Acerca de */
-.about {
-    background: #f4f4f4;
-    padding: 4rem 1rem;
-}
-
-.about p {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Sección de Contacto */
-.contact {
-    padding: 4rem 1rem;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact label {
-    display: block;
-    margin: 0.5rem 0;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.contact button {
-    padding: 0.75rem 1.5rem;
-    background: #00796b;
-    color: #fff;
+    box-sizing: border-box;
+    transition: border 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border: 1px solid #114161;
+  }
+  
+  button {
+    background-color: #114161;
+    color: white;
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.contact button:hover {
-    background: #004d40;
-}
-
-/* Footer */
-footer {
-    background: #004d40;
-    color: #fff;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-footer .social-links a, footer .footer-links a {
-    color: #fff;
-    margin: 0 0.5rem;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #082131;
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #e74c3c;
+  }
+  
+  a {
+    color: #114161;
     text-decoration: none;
-}
-
-footer .social-links a:hover, footer .footer-links a:hover {
+  }
+  
+  a:hover {
     text-decoration: underline;
-}
+  }
+
+  #anagram {
+    font-size: 24px;
+    font-weight: bold;
+  }
