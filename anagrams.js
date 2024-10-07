@@ -29,7 +29,7 @@ function checkAnswer() {
   const messageDiv = document.getElementById('message');
 
   if (userAnswer === currentAnagram.answer) {
-    messageDiv.innerHTML = `<p>Correct! Here's your <a href="secret-library" target="_blank">secret link</a>.</p>`;
+    messageDiv.innerHTML = `<p>Correct! Here's your <a href="secret-library/secret-library.html" target="_blank">secret link</a>.</p>`;
   } else {
     messageDiv.innerHTML = `<p>Incorrect. Try again.</p>`;
   }
